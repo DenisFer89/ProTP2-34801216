@@ -1,0 +1,32 @@
+/*Este es mi archivo css*/
+
+header {
+	background-color: #69bd45;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+section {
+	padding; 20px; /*espaciado para la sección de 20 píxeles*/
+		
+}
+footer {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 20px 0;
+}
+.footer-content {
+	max-width: 800px; /*ancho máximo del contenido del footer*/
+	margin: 0 auto; /*centrar el contenido del footer horizontalmente*/
+	text-align: center;
+}
+
+nav {
+	background-color: #4caf50;
+	padding: 10px;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
