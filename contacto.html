@@ -7,10 +7,10 @@
 		<title>Contacto</title>
 
 		<!--Enlaces a bootstrap-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
-
-		<link rel="stylesheet" href="misEstilos.css">
-		<style>
+		<link rel="stylesheet" href="misEstilos.css"><style>
 			h1 {color: blue;}
 		/*	P {color: red;} */
 		</style>
@@ -40,6 +40,67 @@
 				<p>Párrafo perteneciente a un div, con class "container"</p>
 				<p>Este es el segundo parrafo del elemento div con class:container</p>	
 			</div>
+			
+			<h3>Formularios</h3>
+			<h4>Correo y contraseña</h4>
+			<form>
+				<div class="form-group row">
+ 					<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+ 					<div class="col-sm-10">
+ 						<input type="text" readonly class="form-control-plaintext" id="staticEmail"
+value="email@example.com">
+ 					</div>
+ 				</div>
+ 				<div class="form-group row">
+ 					<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+					<div class="col-sm-10">
+ 						<input type="password" class="form-control" id="inputPassword">
+ 					</div>
+ 				</div>
+			</form>
+			<h4>Correo y contraseña: confirmar identidad</h4>
+			<form class="form-inline">
+				<div class="form-group mb-2">
+ 					<label for="staticEmail2" class="sr-only">Email</label>
+ 					<input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+value="email@example.com">
+ 				</div>
+ 				<div class="form-group mx-sm-3 mb-2">
+ 					<label for="inputPassword2" class="sronly">Password</label> <input type="password" class="formcontrol" id="inputPassword2" placeholder="Password"> </div>
+ 					<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+			</form>
+			<h3>Casilla de verificación y radios</h3>
+			<h4>Predeterminado (apilado)</h4>
+			<div class="form-check">
+ 				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+ 				<label class="form-check-label" for="defaultCheck1"> Default checkbox
+ </label>
+			</div>
+			
+			<div class="form-check">
+ 				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2"
+disabled>
+ 				<label class="form-check-label" for="defaultCheck2"> Disabled checkbox</label>
+			</div>
+			<h4></h4>
+			<div class="form-check">
+ 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+ 				<label class="form-check-label" for="exampleRadios1"> Default radio</label>
+			</div>
+			<div class="form-check">
+ 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+ 				<label class="form-check-label" for="exampleRadios2">Second default radio</label>
+			</div>
+			<div class="form-check">
+ 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled> <label class="form-check-label" for="exampleRadios3"> Disabled radio</label>
+			</div>
+			<h3>Texto de ayuda</h3>
+			<h4>Asociación de texto de ayuda con controles de formularios</h4>
+			<label for="inputPassword5">Password</label>
+			<input type="password" id="inputPassword5" class="form-control"ariadescribedby="passwordHelpBlock">
+			<small id="passwordHelpBlock" class="form-text text-muted"> Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji. 
+			</small>
+				
 		</main>
 		<footer>
 			<p>Derechos de autor &copy; Denis Fernández || 2025</p>
