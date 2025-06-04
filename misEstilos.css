@@ -8,7 +8,7 @@ header {
 }
 body {
 	padding; 20px; /*espaciado para la sección de 20 píxeles*/
-		
+	background-color: #f0f8ff;	
 }
 footer {
 	background-color: #4caf50;
@@ -50,5 +50,6 @@ img {
 	max-width: 100%;
 	border: 3px solid #69bd45;
 	border-radius: 10px;
+	padding: 3px;
 }
 
