@@ -17,7 +17,7 @@
 	</head>
 	<header>
 		<!--Comentario-->
-		<h1 style="color:red">Mi página Talentos Digitales, tramo 1 </h1>
+		<h1>El Garage del Chipá Mboká </h1>
 		<p style="color:#000099">Este es un párrafo cualquiera</p>
 		<!--Utilizando una imagen como enlace o hipervínculo-->
 		<a href="">
@@ -27,83 +27,113 @@
 	<body>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
-		<nav>
+	<!--	<nav>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="nosotros.html">Nosotros</a></li>
 				<li>Contacto</li>
 				<li></li>
 			</ul>
-		 </nav>
-		<main>
-			<h2>Encabezado de tipo 2</h2>
-			<p>Este es un párrafo en el body del documento html</p>
-			<div class="container">
-				<p>Párrafo perteneciente a un div, con class "container"</p>
-				<p>Este es el segundo parrafo del elemento div con class:container</p>	
+		</nav>
+		<main> 		-->
+			     <nav class="navbar navbar-expand-lg bg-body-secondary">
+                		<div class="container-fluid">
+                <!--    <a class="navbar-brand" href="#">Navbar scroll</a> -->
+                       	 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Scroll" aria-controls="navbarScroll" aria-expanded="false" arialabel="Toggle navigation">
+                                <!--Colapsa el navbar cuando la pantalla es de teléfono-->
+                                		<span class="navbar-toggler-icon"></span>
+                        		</button>
+                        	<div class="collapse navbar-collapse" id="navbarScroll">
+                        		<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-pills" style="--bs-scroll-height: 100px">
+                		<!--    <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"  href="#">Active</a>
+                        </li> -->
+                        			<li class="nav-item dropdown">
+                                		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+                                		<div class="dropdown-menu">
+                                        		<a class="dropdown-item" href="#">Action</a>
+                                        		<a class="dropdown-item" href="#">Another action</a>
+                                        		<a class="dropdown-item" href="#">Something else here</a>
+                                        		<div class="dropdown-divider"></div>
+                                        		<a class="dropdown-item" href="#">Separated link</a>
+                                		</div>
+                        			</li>
+						<li class="nav-item">
+                                			<a class="nav-link" href="nosotros.html">Nosotros</a>
+                        			</li>
+                        			<li class="nav-item">
+                                			<a class="nav-link" href="#">Contacto</a>
+                        			</li>
+                        			<li class="nav-item">
+                                			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        			</li>
+                			</ul>
+                			<form class="d-flex" role="search">
+                        		<input class="form-control me-2" type="search" placeholder="Search" arialabel="Search">
+                        		<button class="btn-outline-success" type="submit">Buscar</button>
+                			</form>
+                		</div>
+                	</div>
+
+		</nav>
+			<div class="text-presentation">
+				<h2>Contacto</h2>	
+				<p>Para contactarte con nosotros, regístrate con el formulario "Registrarse";<br>una vez registrado podrás iniciar sesión en el formulario que le sigue con el título "Iniciar Sesión".</p>
+				<img src="./imagenes/compu.jpg" alt="">
 			</div>
-			
-			<h3>Formularios</h3>
-			<h4>Correo y contraseña</h4>
+			<div>	
+			<h3>Registrar Usuario</h3>
+			<div class="formularios">
 			<form>
-				<div class="form-group row">
- 					<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
- 					<div class="col-sm-10">
- 						<input type="text" readonly class="form-control-plaintext" id="staticEmail"
-value="email@example.com">
- 					</div>
- 				</div>
- 				<div class="form-group row">
- 					<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-					<div class="col-sm-10">
- 						<input type="password" class="form-control" id="inputPassword">
- 					</div>
- 				</div>
+  				<div class="mb-3">
+    					<label for="exampleInputText" class="form-label">Nombre</label>
+    					<input type="name" class="form-control" id="" aria-describedby="">
+    					<div id="emailHelp" class="form-text"></div>
+  				</div>
+				<div class="mb-3">
+    					<label for="exampleInputText" class="form-label">Apellido</label>
+    					<input type="name" class="form-control" id="" aria-describedby="">
+    					<div id="emailHelp" class="form-text"></div>
+  				</div>
+				<div class="mb-3">
+    					<label for="exampleInputEmail1" class="form-label">Email</label>
+    					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  				</div>
+				<div>
+					<label for="" class="form-label">Usuario</label>
+					<input type="user" class="form-control" id="" aria-describedby="">
+  				<div class="mb-3">
+    					<label for="exampleInputPassword1" class="form-label">Password</label>
+    					<input type="password" class="form-control" id="exampleInputPassword1">
+  				</div>
+  					<button type="button" class="btn btn-primary" disabled>Guardar</button>
+					<button type="button" class="btn btn-secondary" disabled>Cancelar</button>
 			</form>
-			<h4>Correo y contraseña: confirmar identidad</h4>
-			<form class="form-inline">
-				<div class="form-group mb-2">
- 					<label for="staticEmail2" class="sr-only">Email</label>
- 					<input type="text" readonly class="form-control-plaintext" id="staticEmail2"
-value="email@example.com">
- 				</div>
- 				<div class="form-group mx-sm-3 mb-2">
- 					<label for="inputPassword2" class="sronly">Password</label> <input type="password" class="formcontrol" id="inputPassword2" placeholder="Password"> </div>
- 					<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-			</form>
-			<h3>Casilla de verificación y radios</h3>
-			<h4>Predeterminado (apilado)</h4>
-			<div class="form-check">
- 				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
- 				<label class="form-check-label" for="defaultCheck1"> Default checkbox
- </label>
-			</div>
-			
-			<div class="form-check">
- 				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2"
-disabled>
- 				<label class="form-check-label" for="defaultCheck2"> Disabled checkbox</label>
-			</div>
-			<h4></h4>
-			<div class="form-check">
- 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
- 				<label class="form-check-label" for="exampleRadios1"> Default radio</label>
-			</div>
-			<div class="form-check">
- 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
- 				<label class="form-check-label" for="exampleRadios2">Second default radio</label>
-			</div>
-			<div class="form-check">
- 				<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled> <label class="form-check-label" for="exampleRadios3"> Disabled radio</label>
-			</div>
-			<h3>Texto de ayuda</h3>
-			<h4>Asociación de texto de ayuda con controles de formularios</h4>
-			<label for="inputPassword5">Password</label>
-			<input type="password" id="inputPassword5" class="form-control"ariadescribedby="passwordHelpBlock">
-			<small id="passwordHelpBlock" class="form-text text-muted"> Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji. 
-			</small>
-				
+			</div>	
+			<br>
+			<div class="formularios">
+				<h3>Iniciar Sesión</h4>
+				<form>
+  					<div class="mb-3">
+    						<label for="exampleInputEmail1" class="form-label">Email</label>
+    						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    						<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  					</div>
+  					<div class="mb-3">
+    						<label for="exampleInputPassword1" class="form-label">Password</label>
+    						<input type="password" class="form-control" id="exampleInputPassword1">
+  					</div>
+  					<div class="mb-3 form-check">
+    						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+  					</div>
+  						<button type="button" class="btn btn-primary">Ingresar</button>
+						<button type="button" class="btn btn-primary" disabled>Cancelar</button>
+				</form>
+			</div>		
 		</main>
+
 		<footer>
 			<p>Derechos de autor &copy; Denis Fernández || 2025</p>
 		</footer>
